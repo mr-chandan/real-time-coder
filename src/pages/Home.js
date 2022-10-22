@@ -20,7 +20,7 @@ const Home = () => {
       toast.error('Room id & username is required');
       return;
     }
-    navigate('/editor/' + roomid, {
+    navigate(`/editor/${roomid}`, {
       state: username,
     })
   }
